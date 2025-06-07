@@ -1,0 +1,10 @@
+<ul class="pa0">
+	  {{ range .GetTerms "journals" }}
+	   <li class="list di">
+     <a href="{{ .RelPermalink }}" class="journal-color link f5 grow br-pill ba ph3 pv2 mb2 dib black no-underline roboto-mono-tag">
+       {{- .LinkTitle -}}
+     </a>
+   </li>
+  {{ end }}
+</ul>
+
